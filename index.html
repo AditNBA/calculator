@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <!-- <div class="kawaii"><p>Kawaii Calculator</p></div> -->
+
+  <div class="calculator">
+    <input type="text" placeholder="" id="inputBox" />
+
+    <div class="button-box">
+      <button class="op" class="symbol">%</button>
+      <button class="ac-btn" onclick="allClear()">AC</button>
+
+      <button class="del-butt" onclick="del()">DEL</button>
+
+      <button onclick="addtoD('/')" class="symbol">/</button>
+    </div>
+    <div class="button-box">
+      <button onclick="addtoD(7)">7</button>
+      <button onclick="addtoD(8)">8</button>
+      <button onclick="addtoD(9)">9</button>
+      <button onclick="addtoD('*')" class="symbol">*</button>
+    </div>
+    <div class="button-box">
+      <button onclick="addtoD(4)">4</button>
+      <button onclick="addtoD(5)">5</button>
+      <button onclick="addtoD(6)">6</button>
+      <button onclick="addtoD('-')" class="symbol">-</button>
+    </div>
+    <div class="button-box">
+      <button onclick="addtoD(1)">1</button>
+      <button onclick="addtoD(2)">2</button>
+      <button onclick="addtoD(3)">3</button>
+      <button onclick="addtoD('+')" class="symbol">+</button>
+    </div>
+    <div class="button-box">
+      <button onclick="addtoD('00')">00</button>
+      <button onclick="addtoD(0)">0</button>
+      <button onclick="addtoD('.')">.</button>
+      <button onclick=" calculate()" class="equalBtn">=</button>
+    </div>
+  </div>
+  <!-- script -->
+
+  <script src="script.js"></script>
+  <body></body>
+</html>
